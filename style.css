@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+#mainSpan {
+  margin: 0 0 0 0.5em;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 249, 249);
+}
+body {
+ -webkit-font-smoothing: antialiased;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+}
+button {
+ cursor: pointer;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+header {
+ position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+ 
+}
+nav ul li {
+    margin: 1.5em;
+    float: right;
+}
+li { 
+    list-style: none;
+}
+nav a {
+    color: #fff;
+    font-size:  1.5em;
+    font-weight: 700;
+    
+}
+a:focus,
+a:hover {
+    color: rgb(180, 179, 179);
+    border-bottom: 0.5px rgb(180, 179, 179) solid;
+}
+.second-col a:focus,
+.second-col a:hover {
+    border: none;
+}
+#portHeader {
+   color: #985B46;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#footerMore {
+    margin: 2em;
+    font-weight: 700;
+    font-style: italic;
+}
+.social-media {
+ width: 35px;
+ height: 35px;
+}
+footer {
+    padding: 0.1em auto;
+    background-color: #975A45;
+    color: #F7EFEF;
+}
+footer ul li {
+    margin: 0.7em auto;
+}
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.portfolio-content {
+    margin: 3.5em  auto; 
+    text-align: center;
+    height: 450;
+}
+.mySlides {
+    display:none;
+    height: 475px;
+    padding: 0 auto;
+    text-align: center; 
+}
+.container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0.5em 0.75em;
+}
+
+.main {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+}
+.main::before {    
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
+.main-content {
+    position: relative;
+    padding: 15em 0;
+    height: 100vh;
+    text-align: left;
+    font-style: italic;
+}
+.second-col {
+  padding: 20px 0;
+}
+
+.main-content-title{
+    position: relative;
+    font-size: 3em;
+    color: rgb(247, 239, 239);
+    padding: 0.5em 0;
+    font-weight: 700;
+}
+.btn-main {
+    padding: 1.5em 3em;
+    color: rgb(255, 249, 249);
+    background: #965843d7;
+    border: none;
+    border-radius: 5%;
+    margin: 0.5em auto;
+    font-weight: bold;
+    font-size: 1.2em;
+    position: relative;
+}
+.btn-main:focus, 
+.btn-main:hover {
+    background-color: #6e3825d7;
+    color: rgb(255, 249, 249);
+}
+.about-us {
+    padding: 0 0 4em;
+    color: rgb(255, 249, 249);
+    background: rgb(0,0,0);
+    background: linear-gradient(98deg, rgba(0,0,0,0.8141631652661064) 0%, rgba(150,88,67,0.9346113445378151) 0%, rgba(150,88,67,1) 17%, rgba(150,88,67,1) 49%, rgba(150,88,67,1) 75%, rgba(150,88,67,0.9094012605042017) 91%);
+}
+.about-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+.about-background {
+    background-image: url(img/onurkuaför.png);
+    width: 400px;
+    height: 400px;
+    -webkit-border-radius: 400px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 400px;
+    -moz-background-clip: padding;
+    border-radius: 400px;
+    background-clip: padding-box;
+    background-size: cover;
+    background-position: center center;
+    padding: 10em;
+    margin: 0 2em 1em;
+}
+.about-flex p {
+    flex-shrink: 5;
+}
+.about-us  h1{
+font-weight: 900;
+font-size: 3em;
+line-height: 1.7;
+}
+.about-us p {
+    font-size: 1.2em;
+    line-height: 1.7;
+}
