@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onur | Hair Design & Beauty</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#footer">İletişim</a></li>
+                <li><a href="#portfolio">Portfolyo</a></li>
+                <li><a href="#about">Hakkımızda</a></li>
+                <li><a href="#">Ana Sayfa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main">
+    <div class="main-content">
+        <div class="container">
+        <h1 class="main-content-title">Yeni Saçlar  <br> <span id="mainSpan">Yeni Tasarımlar</span> 
+        </h1>
+        <button class="btn btn-main">Daha Fazla</button>
+    </div>
+    </div>
+    </section>
+    <section class="about-us" id="about">
+         <div class="container">
+            <div class="about">
+                <h1>Hakkımızda</h1>
+                <div class="about-flex">
+                    <div class="about-background" alt="about us place"></div>
+                        <p>Her Türlü Hizmeti Bulabileceğiniz Bir Kuaför ve Güzellik Salonu İle Tanışın
+                         2015 yılından bu yana İzmir Alaybey bölgesinin en gözde mekanlarından biri haline gelen Onur Kuaför ve Saç Tasarım  olarak tüm müşterilerimize kaliteli ve profesyonel hizmet sunuyoruz.  <br>
+                         Yıllardır sadık müşterilerimizin büyüleyici bir görünüşe kavuşmasını ve mükemmel hissetmesini sağlamak için üzerimize düşeni yapıyoruz. Nitelikli uzmanlardan oluşan ekibimizin size neler sunabileceğini görmek için bize ulaşın..
+                        </p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="portfolio-main" id="portfolio"> 
+        <div class="container">
+            <h2 id="portHeader"><strong>Example  Works</strong></h2>
+            <div class="portfolio-content" style="max-width:400px">
+                <img class="mySlides" src="img/hair1.jpg" style="width:100%">
+                <img class="mySlides" src="img/hair2.jpg" style="width:100%">
+                <img class="mySlides" src="img/hair3.jpg" style="width:100%">
+                <img class="mySlides" src="img/hair4.jpg" style="width:100%">
+                <img class="mySlides" src="img/hair5.jpg" style="width:100%">
+                <img class="mySlides" src="img/hair6.jpg" style="width:100%">
+              </div>
+              <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 3500); // Change image every 2 seconds
+                }
+                </script>
+                
+</div>  
+    </section>
+    <footer id="footer">
+        <div class="container flex"> 
+        <div class="footer-header">
+        <h2><strong>Onur  Kuaför & Saç Tasarım</strong> </h2>
+        <span id="footerMore"><p>Her Türlü Hizmeti Bulabileceğiniz Bir Kuaför ve Güzellik Salonu İle Tanışın</p></span>
+    </div>
+         <ul>
+             <li><a href="#">Anasayfa</a></li> 
+             <li><a href="#porftolio">Portfolyo</a></li>
+             <li><a href="#about">Hakkımızda</a></li>
+             <li><a href="#footer">İletişim</a></li>
+         </ul>
+         <ul class="second-col">
+             <li><a href="https://www.facebook.com/groups/onurkuafor"><img src="img/facebook.png" alt="facebook adress photo" class="social-media"></a></li>
+             <li><a href="https://www.instagram.com/onursen19811/"><img src="img/instagram.ico" alt="instagram adress photo" class="social-media"></a></li> 
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
